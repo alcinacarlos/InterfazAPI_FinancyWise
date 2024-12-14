@@ -190,8 +190,8 @@ fun SelectecScreen(selectedItemIndex:Int , loginViewModel:LoginViewModel){
                     Text(text = "Resumen", fontSize = 20.sp, fontWeight = FontWeight.SemiBold)
                     Text(text = "${loginViewModel.email.value}")
                     Text("/usuario/{id}")
-                    Text("/gastos/usuario")
-                    Text("/ingresos/usuario")
+                    Text("/gastos/{usuarioid}")
+                    Text("/ingresos/{usuarioid}")
                 }
 
             }
