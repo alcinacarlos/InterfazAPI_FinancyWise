@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Financy</string>
+    <string name="app_name2">Wise</string>
+    <string name="welcome">Gestiona tus finanzas con</string>
+    <string name="saving">Ahorra dinero todos los meses, tú puedes conseguirlo!</string>
+    <string name="tracking">Averigua dónde se va todo ese dinero que echas de menos!</string>
+    <string name="signin">Crear Cuenta</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="email">CORREO ELECTRÓNICO</string>
+    <string name="password">CONTRASEÑA</string>
+    <string name="keep_logged_in">Mantener sesión iniciada</string>
+    <string name="cantlogin">¿No puedes iniciar sesión?</string>
+    <string name="cantsignin">¿No quieres crear una cuenta?</string>
+    <string name="signinorlogin">Bienvendio a FinancyWise</string>
+    <string name="choose">¿Qué desea hacer?</string>
+</resources>
