@@ -4,7 +4,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -27,9 +26,7 @@ import androidx.navigation.NavController
 import com.alcinacarlos.interfazproyectoapi.R
 import com.alcinacarlos.interfazproyectoapi.components.BackButton
 import com.alcinacarlos.interfazproyectoapi.components.ImageInitial
-import com.alcinacarlos.interfazproyectoapi.components.NextButton
 import com.alcinacarlos.interfazproyectoapi.components.PageIndicator
-import com.alcinacarlos.interfazproyectoapi.components.SkipButton
 import com.alcinacarlos.interfazproyectoapi.navigation.AppScreen
 import kotlinx.coroutines.CoroutineScope
 
@@ -78,7 +75,7 @@ fun InitialText() {
     )
 }
 
-@Composable()
+@Composable
 fun Choose(){
     Text(
         text = stringResource(R.string.choose),

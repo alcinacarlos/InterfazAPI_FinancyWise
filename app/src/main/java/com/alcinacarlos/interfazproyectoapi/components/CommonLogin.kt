@@ -105,6 +105,12 @@ fun Email(
             colors = coloresCampos()
         )
     }
+    if (emailError){
+        Text(
+            text = "Introduce un emal válido",
+            color = Color.Red
+        )
+    }
 
 }
 
@@ -167,6 +173,12 @@ fun Password(
             visualTransformation = if (isPasswordVisible) VisualTransformation.None else PasswordVisualTransformation(),
             shape = RoundedCornerShape(15.dp),
             colors = coloresCampos()
+        )
+    }
+    if (passwordError){
+        Text(
+            text = "La contraseña tiene que tener más de 6 caracteres",
+            color = Color.Red
         )
     }
 
@@ -267,18 +279,18 @@ fun LoginButton(
         enabled = enabled,
         colors = ButtonColors(
             contentColor = colorResource(R.color.white),
-            containerColor = colorResource(R.color.principal8),
-            disabledContainerColor = colorResource(R.color.principal2),
+            containerColor = colorResource(R.color.principal2),
+            disabledContainerColor = colorResource(R.color.principal1),
             disabledContentColor = colorResource(R.color.white)
         ),
         modifier = Modifier
             .size(100.dp)
-            .padding(5.dp)
     ) {
         Icon(
+            modifier = Modifier.size(35.dp),
             imageVector = Icons.AutoMirrored.Filled.ArrowForward,
             contentDescription = "Arrow",
-            tint = colorResource(R.color.principal8)
+            tint = colorResource(R.color.principal5)
         )
     }
 }

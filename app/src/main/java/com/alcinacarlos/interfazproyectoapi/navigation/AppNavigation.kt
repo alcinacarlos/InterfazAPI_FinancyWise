@@ -7,6 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import com.alcinacarlos.interfazproyectoapi.screens.InitialScreen
 import com.alcinacarlos.interfazproyectoapi.screens.LoginScreen
 import com.alcinacarlos.interfazproyectoapi.screens.MainScreen
+import com.alcinacarlos.interfazproyectoapi.screens.SignInScreen
 import com.alcinacarlos.interfazproyectoapi.viewmodel.LoginViewModel
 
 
@@ -28,11 +29,9 @@ fun AppNavigation(){
             LoginScreen(navControlador, loginViewModel)
         }
 
-//        composable(AppScreen.LoggedScreen.route){
-//            LoggedScreen(navControlador, loginViewModel)
-//        }
-//        composable(AppScreen.SingInScreen.route){
-//            SignInScreen(navControlador, loginViewModel)
-//        }
+        composable(AppScreen.SingInScreen.route){
+            SignInScreen(navControlador, loginViewModel)
+        }
+
     }
 }

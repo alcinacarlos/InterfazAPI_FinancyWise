@@ -8,7 +8,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 import com.alcinacarlos.interfazproyectoapi.components.initial.*
-import com.alcinacarlos.interfazproyectoapi.viewmodel.LoginViewModel
 
 @Composable
 fun InitialScreen(navController: NavController){
