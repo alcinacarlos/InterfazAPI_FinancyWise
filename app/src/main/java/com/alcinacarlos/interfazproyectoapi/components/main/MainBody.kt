@@ -49,6 +49,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.alcinacarlos.interfazproyectoapi.GastosEjemplo
 import com.alcinacarlos.interfazproyectoapi.R
 import com.alcinacarlos.interfazproyectoapi.model.NavigationItem
 import com.alcinacarlos.interfazproyectoapi.viewmodel.LoginViewModel
@@ -181,32 +182,45 @@ fun SelectecScreen(selectedItemIndex:Int , loginViewModel:LoginViewModel){
     Box(
         modifier = Modifier
             .fillMaxSize()
+            .padding(top = 110.dp)
             .background(colorResource(R.color.background)),
         contentAlignment = Alignment.Center
     ) {
         when(selectedItemIndex){
             0 -> {
-                Column {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
                     Text(text = "Resumen", fontSize = 20.sp, fontWeight = FontWeight.SemiBold)
                     Text(text = "${loginViewModel.email.value}")
                     Text("/usuario/{id}")
                     Text("/gastos/{usuarioid}")
                     Text("/ingresos/{usuarioid}")
+                    GastoList(GastosEjemplo.listaGastos)
                 }
-
             }
             1 -> {
-                Column {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ){
                     Text(text = "Transacciones", fontSize = 20.sp, fontWeight = FontWeight.SemiBold)
                     Text("/usuario/{id}")
                     Text("/gastos/{usuarioid}")
                     Text("/ingresos/{usuarioid}")
+                    GastoList(GastosEjemplo.listaGastos)
                 }
             }
             2 -> {
-                Column {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
                     Text(text = "Perfil", fontSize = 20.sp, fontWeight = FontWeight.SemiBold)
+                    Text(text = "${loginViewModel.email.value}")
                     Text("/usuario/{id}")
+                    Perfil(loginViewModel)
                 }
 
             }
